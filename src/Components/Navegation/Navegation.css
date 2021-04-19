@@ -1,0 +1,20 @@
+.Navegation {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.Navegation-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Navegation-ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 25px;
+}

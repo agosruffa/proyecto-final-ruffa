@@ -1,0 +1,9 @@
+
+.items-2 {
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin-left: 50px;
+}
