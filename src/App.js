@@ -6,6 +6,7 @@ import './App.css';
 import { Header } from './Components/Header/Header';
 import {Navegation }  from './Components/Navegation/Navegation';
 import Footer from './Components/Footer/Footer';
+import CartWidget from './Components/CartWidget/CartWidget';
 //Views
 import Home from './Views/Home/Home';
 import Contact from './Views/Contact/Contact';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Products" exact component={Products} />
           <Route path="/Products/:id" component={ItemDetailContainer} />
           <Route path="/Contact" exact component={Contact} />
+          <Route path="/Cart" exact component={CartWidget} />
         </Switch>
         <Footer />
       </div>

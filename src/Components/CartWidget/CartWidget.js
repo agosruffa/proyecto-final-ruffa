@@ -1,11 +1,16 @@
 import './CartWidget.css';
-import { Icon } from 'semantic-ui-react'
 
-function CartWidget() {
+
+
+function CartWidget({ add }) {
+  
   return (
-    <div className="carrito">
-      <Icon link name='cart' />
+ 
+    <div className="center">
+      <h2>carrito</h2>
+      <h2>total {add}</h2>
     </div>
+    
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navegation.css';
 import { Link } from 'react-router-dom';
-import CartWidget from '../CartWidget/CartWidget';
+import Cart from '../../Views/Cart/Cart';
 
 export const Navegation = () => {
   return (
@@ -16,7 +16,9 @@ export const Navegation = () => {
         <Link to="/Contact">
           <li>Contact</li>
         </Link>
-        <CartWidget />
+        <Link to="/Cart">
+          <li><Cart /></li>
+        </Link>
       </ul>
     </nav>
   );

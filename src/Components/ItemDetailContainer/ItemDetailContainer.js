@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Segment, Image, Button, Container } from 'semantic-ui-react'
+import { Segment, Image, Container } from 'semantic-ui-react'
 import './ItemDetailContainer.css'
+import ItemCount from '../ItemCount/ItemCount'
+
 
 
 export const ItemDetailContainer = ({ match }) => {
@@ -21,13 +23,10 @@ export const ItemDetailContainer = ({ match }) => {
         <Image src={products.thumbnailUrl} alt={products.title} size='medium' centered />
         <h2>{products.title}</h2>
         <h2>Precio $XX</h2>
-      <Button.Group>
-        <Button>Cancelar</Button>
-        <Button positive>Agregar al carrito</Button>
-      </Button.Group>
+        <ItemCount />
       </Segment>
       </Container>
-      
+    
     </div>
   );
 };
