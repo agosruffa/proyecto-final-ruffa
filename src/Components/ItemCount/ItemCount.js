@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Button } from 'semantic-ui-react';
 import  ItemDetail  from '../ItemDetail/ItemDetail';
 import './ItemCount.css'
+import {ProductContext} from '../ProductContext/ProductContext';
 
-function ItemCount() {
-    const [count, setCount] = useState(0)
+function ItemCount(props) {
+    const [count, setCount] = useState(0);
+    const { onAdd } = props;
+    const [products, setProducts] = useContext(ProductContext);
 
   return (
 
@@ -15,13 +18,14 @@ function ItemCount() {
             <Button basic color='red' onClick={() => setCount(count > 0 && count - 1) }>
             Borrar
             </Button>
-            
             <Button 
              basic color='green' 
-             onClick={() => setCount(count + 1)}>
+             onClick={() => setCount(count + 1)}
+             >
             Agregar al carrito
             </Button>
-        
+            <div>
+      </div> 
         <div className="itemscount"> 
             {
             count > 0 &&
