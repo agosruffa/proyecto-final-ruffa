@@ -3,7 +3,8 @@ import React, { useContext } from 'react';
 import {ProductContext} from '../ProductContext/ProductContext';
 import {CartContext} from '../CartContext/CartContext';
 import { Item } from '../Item/Item';
-import Cart from '../CartWidget/Cart'
+import Cart from '../CartWidget/Cart';
+import Orders from '../Orders/Orders'
 
 
 export const CartWidget = () => {
@@ -39,13 +40,14 @@ export const CartWidget = () => {
       <div countCartItems={cartItems.length}></div>
       <div className="row">
       <h2>Cart Items</h2>
-        <Item />
+ 
         <Cart 
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}>
         </Cart>
-          
+        <Orders />
+
       </div>
     </div>
   );
