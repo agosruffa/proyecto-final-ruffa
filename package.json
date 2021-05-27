@@ -1,5 +1,6 @@
 {
   "name": "clase-09-eventos",
+  "homepage": "https://agosruffa.github.io/proyecto-final-ruffa/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,8 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://agosruffa.github.io/proyecto-final-ruffa/"
+    "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
