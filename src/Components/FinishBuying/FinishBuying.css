@@ -1,0 +1,30 @@
+.finish-buying {
+  padding: 5px;
+  margin: 5px;
+}
+
+.finish-buying .btn {
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 400;
+  background-color: black;
+  padding:5px;
+  width: 100%;
+  -webkit-animation: appear 1.3s;
+          animation: appear 1.3s;
+}
+
+.finish-buying .btn:hover {
+  font-size: 20px;
+}
+
+.finish-buying .btn .cart {
+  margin-left: 2%;
+}
+

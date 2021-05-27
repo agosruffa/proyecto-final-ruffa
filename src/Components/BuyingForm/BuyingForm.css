@@ -1,0 +1,113 @@
+.buy-form-container {
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 95vh;
+  padding: 5vh;
+}
+
+.buy-form-container .form-container {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 75%;
+  min-height: 520px;
+  border: solid;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.buy-form-container .form-container .total-amount {
+  width: 100%;
+  text-align: center;
+}
+
+.buy-form-container .form-container span {
+  background-color:  #cc3a3a;
+  width: 70%;
+  height: 3px;
+  border-radius: 1.5px;
+}
+
+.buy-form-container .form-container .btn-buy, .buy-form-container .form-container .btn-getOrder {
+  font-weight: 700;
+  background-color:  #cc3a3a;
+  width: 30%;
+  height: 50px;
+  color:white;
+}
+
+.buy-form-container .form-container .btn-buy .loop, .buy-form-container .form-container .btn-getOrder .loop {
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: #1f2226;
+  -webkit-animation: loop 1s ease-in-out infinite alternate;
+          animation: loop 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loop {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(355deg);
+            transform: rotate(355deg);
+  }
+}
+
+@keyframes loop {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(355deg);
+            transform: rotate(355deg);
+  }
+}
+
+.buy-form-container .form-container .btn-getOrder .loop {
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: #1f2226;
+  -webkit-animation: loop 1s ease-in-out infinite alternate;
+          animation: loop 1s ease-in-out infinite alternate;
+}
+
+@keyframes loop {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(355deg);
+            transform: rotate(355deg);
+  }
+}

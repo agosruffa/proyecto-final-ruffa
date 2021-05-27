@@ -1,8 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-
-
 //cambiar var por const en -- const firebaseConfig = {
 
 const firebaseConfig = {
@@ -14,6 +12,8 @@ const firebaseConfig = {
     appId: "1:316858858605:web:b27a58a4a52f8674fd9364"
   };
   // Initialize Firebase
-  const firebaseDB = firebase.initializeApp(firebaseConfig);
+  const firebasedb = firebase.initializeApp(firebaseConfig);
 
-  export const db = firebaseDB.firestore();
+  export const db = firebasedb.firestore();
+
+  
